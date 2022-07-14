@@ -93,7 +93,6 @@ def pvp():
     click_area(images[2])
     while(True):
         if check_area(images[3]):
-            time.sleep(2)
             click_area(images[3])
             until_area(images[4])
             click_area(images[4])

@@ -50,7 +50,8 @@ def click(p):
                 break
             i += 1
 
-    pyautogui.click(p[0], p[1], duration=0.1)
+    pyautogui.click(p[0], p[1], duration=0.01)
+    # time.sleep(0.01)
 
     win32gui.EnumWindows(get_all_hwnd, 0)
     for h, t in hwnd_map.items():
@@ -95,10 +96,13 @@ def click_area(img, dx=0, dy=0):
 
 
 def check_area(img):
+    time.sleep(0.5)
     location = pyautogui.locateCenterOnScreen(img, confidence=0.8)
     if location is not None:
         print(location.x, location.y)
+        time.sleep(1)
         return True
+    time.sleep(1)
     return False
 
 
@@ -110,4 +114,3 @@ def until_area(img, stop=6):
         if i == stop:
             break
         i += 1
-        time.sleep(1.5)
