@@ -5,6 +5,7 @@ from utils import click_area
 from utils import check_area
 from utils import until_area
 import time
+from threading import Thread
 
 
 # （旧版）活动出击，刷贡献值
@@ -101,14 +102,24 @@ def pvp():
             break
 
 
+def get_value(notice):
+    global mode
+    user_value = input(notice)
+    mode = user_value
+
+
 if __name__ == '__main__':
-    mode = input("""
+    mode = "1"
+    t = Thread(target=get_value, args=("""
     which mode?
     1:main_attack()
     2:pvp()
     3:activity_attack()
-    """)
+    """,))
+    t.start()
+    time.sleep(8)
     i = 0
+    print("doing job", mode)
     while(True):
         print("attacked", i, "times")
         if mode == "1":
