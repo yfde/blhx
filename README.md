@@ -1,4 +1,4 @@
-# blhx auto script
+# blhx (碧蓝航线) (Azur Lane) auto script
 ## Requirement
 - pip install requirement.txt
 - Android VM running with resolution 1280 * 720
