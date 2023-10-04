@@ -1,5 +1,7 @@
 # blhx (碧蓝航线) (Azur Lane) auto script
 ## Requirement
+- git clone https://github.com/yfde/blhx.git
+- cd blhx
 - pip install requirement.txt
 - Android VM running with resolution 1280 * 720
 ## Usage
