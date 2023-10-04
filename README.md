@@ -3,7 +3,7 @@
 - git clone https://github.com/yfde/blhx.git
 - cd blhx
 - pip install requirement.txt
-- Android VM running with resolution 1280 * 720
+- Android VM running with resolution 1440 * 810
 ## Usage
 - run terminal as administrator
 - python blhx_auto.py
