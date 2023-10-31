@@ -12,7 +12,9 @@
 - usbmmid_v2 driver (simpler): https://www.amyuni.com/forum/viewtopic.php?t=3030
 - iddsample driver (perform better): https://github.com/ge9/IddSampleDriver
 - duet (not virtual, but perform well): https://www.duetdisplay.com
+  
 !!! All these tools are driver-related
+
 !!! Must be installed in the system disk to avoid strange error
 ### Easier Luanch
 - for windows, add the paths of (1) exe of Android VM and (2) current folder to "blhx.ps1". Right click it and run in powershell.
