@@ -1,2 +1,2 @@
 pyautogui==0.9.53
-pywin32
+pyscreeze==0.1.28
