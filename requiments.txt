@@ -1,2 +1,2 @@
-pyautogui
+pyautogui==0.9.53
 pywin32
